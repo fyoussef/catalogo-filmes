@@ -1,4 +1,6 @@
 import NavbarItems from "./NavbarItems"
+import Link from 'next/link'
+
 
 export default function Navbar({genres}) {
 
@@ -7,10 +9,12 @@ export default function Navbar({genres}) {
     return (
         <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="https://flowbite.com" className="flex items-center">
-                    {/* <img src="/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" /> */}
-                    <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Catalogo</span>
-                </a>
+                <Link href="/">
+                    <a className="flex items-center">
+                        {/* <img src="/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" /> */}
+                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Catalogo</span>
+                    </a>
+                </Link>
                 <div className="flex md:order-2">
                     <div className="hidden relative mr-3 md:mr-0 md:block">
                         <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
