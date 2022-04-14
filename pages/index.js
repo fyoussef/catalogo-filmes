@@ -16,6 +16,16 @@ export default function Home({genres, popularMovies}) {
 
       <Navbar genres={genres} />
 
+      <div className="hero min-h-screen" style={{backgroundImage: "url(https://images.unsplash.com/photo-1485095329183-d0797cdc5676?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)"}}>
+        <div className="hero-overlay bg-black bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold">Catálogo</h1>
+            <p className="mb-5">Pesquise aqui por nome de filmes ou gêneros preferidos para saber os detalhes.</p>
+          </div>
+        </div>
+      </div>
+
       <div className="container flex flex-wrap justify-between items-center mx-auto mt-20">
         {popularMovies.map((movie, key) => {
           return (
