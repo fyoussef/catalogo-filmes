@@ -1,7 +1,6 @@
 import NavbarItems from "./NavbarItems"
 import Link from 'next/link'
 
-
 export default function Navbar({genres}) {
 
     const genresList = genres.slice(0, 5)
@@ -12,7 +11,7 @@ export default function Navbar({genres}) {
                 <Link href="/">
                     <a className="flex items-center">
                         {/* <img src="/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" /> */}
-                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Catalogo</span>
+                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Catálogo</span>
                     </a>
                 </Link>
                 <div className="flex md:order-2">
