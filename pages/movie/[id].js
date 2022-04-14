@@ -10,24 +10,16 @@ export default function MoviePage({genres, result}) {
     
     return (
         <div>
+
             <Navbar genres={genres} />
 
-            {/* <div className="artboard phone-1">320×568</div> */}
-
-
-            <div className="m-auto w-1/3">
-                <h5 className="mt-20 mb-8 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">{result.title}</h5>
-                <div className="container">
-                    <Image 
-                            layout="responsive"
-                            className="rounded-xl shadow-2xl"
-                            height={1080}
-                            width={1920}
-                            src={
-                                `${BASE_URL}${result.backdrop_path || result.poster_path }`
-                            }
-                            alt="Thumb"
-                        />
+            <div className="hero min-h-screen">
+                <div className="hero-content flex-col lg:flex-row">
+                    <img src={`${BASE_URL}${result.backdrop_path || result.poster_path }`} className="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 className="text-4xl font-bold">{result.title}</h1>
+                        <p className="py-6">{result.overview}</p>
+                    </div>
                 </div>
             </div>
 
